@@ -60,7 +60,7 @@ $ git checkout -b newBrach origin/master
 此外，也可以使用git merge命令或者git rebase命令，在本地分支上合并远程分支。
 
 $ git merge origin/master
-# 或者
+或者
 $ git rebase origin/master
 上面命令表示在当前分支上，合并origin/master
 
@@ -99,7 +99,7 @@ $ git pull --rebase <远程主机名> <远程分支名>:<本地分支名>
 但是，你可以改变这个行为，加上参数 -p 就会在本地删除远程已经删除的分支。
 
 $ git pull -p
-# 等同于下面的命令
+等同于下面的命令
 $ git fetch --prune origin 
 $ git fetch -p
 
@@ -116,7 +116,7 @@ $ git push origin master
 如果省略本地分支名，则表示删除指定的远程分支，因为这等同于推送一个空的本地分支到远程分支。
 
 $ git push origin :master
-# 等同于
+等同于
 $ git push origin --delete master
 上面命令表示删除origin主机的master分支。
 如果当前分支与远程分支之间存在追踪关系，则本地分支和远程分支都可以省略。
@@ -133,7 +133,7 @@ $ git push -u origin master
 不带任何参数的git push，默认只推送当前分支，这叫做simple方式。此外，还有一种matching方式，会推送所有有对应的远程分支的本地分支。Git 2.0版本之前，默认采用matching方法，现在改为默认采用simple方式。如果要修改这个设置，可以采用git config命令。
 
 $ git config --global push.default matching
-# 或者
+或者
 $ git config --global push.default simple
 还有一种情况，就是不管是否存在对应的远程分支，将本地的所有分支都推送到远程主机，这时需要使用--all选项。
 
