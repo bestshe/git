@@ -1,7 +1,13 @@
 ## git 笔记
 
-参考资料：http://www.ruanyifeng.com/blog/2014/06/git_remote.html
-http://blog.csdn.net/gnnulzy/article/details/52413698
+  参考资料：http://www.ruanyifeng.com/blog/2014/06/git_remote.html
+
+  http://blog.csdn.net/gnnulzy/article/details/52413698
+
+  git 撤销commit:http://zhyq0826.iteye.com/blog/1671638
+  
+  Git:代码冲突常见解决方法:http://blog.csdn.net/iefreer/article/details/7679631
+
 
 ###版本回退
 
